@@ -1,0 +1,36 @@
+baseURL = "https://codex.caps.is/"
+languageCode = "en-us"
+title = "Codex"
+theme = "PaperMod"
+paginate = 10
+
+[params]
+  author = "Andreas"
+  description = "Notes on embedded systems, automotive hacking, and working with Claude Code"
+  defaultTheme = "dark"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = false
+  ShowCodeCopyButtons = true
+  ShowToc = true
+
+[params.homeInfoParams]
+  Title = "Codex"
+  Content = "Notes on OVMS development, e-Golf CAN bus reverse engineering, and using Claude Code for embedded systems work."
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/slothish"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 2
