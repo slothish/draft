@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+/* Nord light */
+:root {
+    --main-width: 860px;
+    --accent: #5e81ac;
+    --theme: #eceff4;
+    --entry: #e5e9f0;
+    --primary: #2e3440;
+    --secondary: #4c566a;
+    --tertiary: #d8dee9;
+    --content: #3b4252;
+    --code-block-bg: #3b4252;
+    --code-bg: #d8dee9;
+    --border: #d8dee9;
+    color-scheme: light;
+}
+
+/* Nord dark */
+:root[data-theme="dark"] {
+    --accent: #81a1c1;
+    --theme: #2e3440;
+    --entry: #3b4252;
+    --primary: #eceff4;
+    --secondary: #d8dee9;
+    --tertiary: #4c566a;
+    --content: #e5e9f0;
+    --code-block-bg: #3b4252;
+    --code-bg: #434c5e;
+    --border: #434c5e;
+    color-scheme: dark;
+}
+
+body {
+    font-family: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'IBM Plex Mono', 'Fira Code', monospace;
+    letter-spacing: -0.02em;
+}
+
+code, kbd, samp {
+    font-family: 'IBM Plex Mono', 'Fira Code', monospace;
+}
+
+a {
+    color: var(--accent);
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.post-entry:hover {
+    box-shadow: 0 0 0 1px var(--accent);
+}
+
+.post-tags a,
+.terms-tags a {
+    color: var(--accent) !important;
+    border: 1px solid var(--accent) !important;
+    border-radius: 3px;
+}
+
+.post-title a,
+.archive-entry a {
+    color: var(--primary);
+}
+
+.post-title a:hover,
+.archive-entry a:hover {
+    color: var(--accent);
+    opacity: 1;
+}
+
+.logo a,
+#menu a {
+    color: var(--primary);
+}
+
+#menu a:hover {
+    color: var(--accent);
+    opacity: 1;
+}
+
+.highlight pre {
+    border-radius: 4px;
+}

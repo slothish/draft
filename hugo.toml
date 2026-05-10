@@ -4,6 +4,12 @@ title = "Draft"
 theme = "PaperMod"
 paginate = 10
 
+[markup]
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    lineNos = false
+
 [params]
   author = "Andreas"
   description = "Notes on embedded systems, automotive hacking, and working with Claude Code"
